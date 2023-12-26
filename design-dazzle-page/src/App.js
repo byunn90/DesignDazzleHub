@@ -1,5 +1,8 @@
 import pic from "./images/usama-akram-kP6knT7tjn4-unsplash.jpg";
-import "./styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoePrints } from "@fortawesome/free-solid-svg-icons";
+
+import "./index.css";
 
 export default function App() {
   return (
@@ -20,9 +23,15 @@ function Logo() {
 }
 
 function NavBar() {
-  return <header>HII TODO</header>;
+  return (
+    <header>
+      <div>
+        <FontAwesomeIcon icon={faShoePrints} />
+      </div>
+    </header>
+  );
 }
 
 function Footer() {
-  return <footer>Hi</footer>;
+  return <h1>Hi</h1>;
 }
